@@ -7,11 +7,11 @@ from playwright.async_api import async_playwright
 import win32com.client as win32
 
 # --- Credentials ---
-ZOHO_EMAIL = "mathan.r@xyz.com"
-ZOHO_PASSWORD = "Mathan@28"
+ZOHO_EMAIL = "your name.r@xyz.com"
+ZOHO_PASSWORD = "your name@28"
 ZOHO_URL = "https://accounts.zoho.in/signin?servicename=zohopeople"
-OUTLOOK_TO_SUCCESS = "mathan.r@xyz.com"
-OUTLOOK_TO_FAIL = "selva.r@xyz.com"
+OUTLOOK_TO_SUCCESS = "yourname.r@xyz.com"
+OUTLOOK_TO_FAIL = "mail name.r@xyz.com"
 
 
 # --- Outlook Mail Sender ---
@@ -96,7 +96,7 @@ async def zoho_check(action="checkin"):
             print("✅ Logged into Zoho successfully.")
             await page.wait_for_timeout(6000)
          # --- Navigate to Attendance ---
-            await page.goto("https://peopleplus.zoho.in/sharpsyssoftwaresolutioniprvatelimited/zp#home/myspace/overview-actionlist", wait_until="load")
+            await page.goto("attendance page URL"load")
             await page.wait_for_timeout(5000)
 
             # --- Perform Check-In/Out ---
